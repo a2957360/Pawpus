@@ -1,0 +1,246 @@
+.primary-input-container {
+    ::selection {
+        background: $color-grey-dark;
+        color: $color-white;
+        border: 1px solid $color-grey-dark;
+    }
+
+    ::-moz-selection {
+        background: $color-grey-dark;
+        color: $color-white;
+    }
+
+    ::-webkit-selection {
+        background: $color-grey-dark;
+        color: $color-white;
+    }
+
+    .primary-input {
+        background-color: $color-white;
+        color: $color-grey-dark;
+        border: 1px solid #9f9f9f;
+
+        &:hover,
+        &:active,
+        &:focus {
+            color: $color-grey-dark;
+            border: 1px solid $color-grey-dark;
+            box-shadow: none;
+        }
+
+        &--small {
+            width: 50px;
+        }
+
+        &--medium {
+            width: 200px;
+        }
+    }
+}
+
+.auth-input-container {
+    ::selection {
+        background: $color-grey-dark;
+        color: $color-white;
+    }
+
+    ::-moz-selection {
+        background: $color-grey-dark;
+        color: $color-white;
+    }
+
+    ::-webkit-selection {
+        background: $color-grey-dark;
+        color: $color-white;
+    }
+
+    .auth-input {
+        background-color: $color-white;
+        color: $color-grey-dark;
+        border: 1px solid #9f9f9f;
+        height: 35px;
+
+        &:hover,
+        &:focus {
+            color: $color-grey-dark;
+            border: 1px solid $color-grey-dark;
+            box-shadow: none;
+        }
+    }
+}
+
+.search-input-container {
+    ::selection {
+        background: $color-grey-dark;
+        color: $color-white;
+    }
+
+    ::-moz-selection {
+        background: $color-grey-dark;
+        color: $color-white;
+    }
+
+    ::-webkit-selection {
+        background: $color-grey-dark;
+        color: $color-white;
+    }
+
+    display: flex;
+    flex-direction: row;
+    border-radius: 100px;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-grey-light-1;
+    margin: 0 4px 0 4px;
+    max-width: 300px;
+
+    @media only screen and (max-width: 1400px) {
+        max-width: 200px;
+    }
+
+    @media only screen and (max-width: 1024px) {
+        max-width: none;
+        flex-grow: 1;
+    }
+
+    .search-dropdown {
+        background-color: transparent;
+        border: none;
+
+        &:hover,
+        &:focus {
+            background-color: transparent;
+        }
+
+        .search-dropdown-button {
+            border-radius: 100px;
+
+            &:hover,
+            &:focus {
+                background-color: transparent;
+            }
+        }
+    }
+
+    .search-input {
+        display: flex;
+        flex-direction: row;
+        background-color: $color-grey-light-1;
+        color: $color-grey-dark;
+        border: none;
+
+        &:hover,
+        &:focus {
+            color: $color-grey-dark;
+            border: none;
+            box-shadow: none;
+        }
+    }
+
+    .search-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 10px;
+    }
+}
+
+.ant-input-number {
+    &:hover {
+        border: 1px solid $color-grey-dark;
+        box-shadow: none;
+    }
+}
+
+.date-picker-container {
+    ::selection {
+        background: $color-grey-dark;
+        color: $color-white;
+        border: 1px solid $color-grey-dark;
+    }
+
+    ::-moz-selection {
+        background: $color-grey-dark;
+        color: $color-white;
+        border: 1px solid $color-grey-dark;
+    }
+
+    ::-webkit-selection {
+        background: $color-grey-dark;
+        color: $color-white;
+        border: 1px solid $color-grey-dark;
+    }
+
+    .date-picker {
+        width: 100%;
+        background-color: $color-white;
+        color: $color-grey-dark;
+        border: none;
+        box-shadow: none;
+
+        &:hover,
+        &:active,
+        &:focus {
+            color: $color-grey-dark;
+            border: 1px solid $color-grey-dark;
+            border: none;
+            box-shadow: none;
+        }
+    }
+}
+
+.ant-btn-primary {
+    ::selection {
+        background-color: $color-primary;
+        color: $color-grey-dark;
+        border: none;
+    }
+
+    ::-moz-selection {
+        background-color: $color-primary;
+        color: $color-grey-dark;
+        border: none;
+    }
+
+    ::-webkit-selection {
+        background-color: $color-primary;
+        color: $color-grey-dark;
+        border: none;
+    }
+
+    background-color: $color-primary;
+    color: $color-grey-dark;
+    border: none;
+
+    &:hover,
+    &:active,
+    &:focus {
+        background-color: $color-primary;
+        color: $color-grey-dark;
+        border: none;
+        box-shadow: none;
+    }
+}
+
+.text-input {
+    display: flex;
+    flex-direction: row;
+
+    &:hover,
+    &:focus {
+        box-shadow: none;
+    }
+    
+    &--grey {
+        border: 1px solid $color-grey-light;
+        background-color: $color-white;
+        color:$color-grey-dark;
+
+        &:hover,
+        &:focus {
+            border: 1px solid $color-grey-light;
+            background-color: $color-white;
+            box-shadow: none;
+        }
+    }
+}

@@ -1,0 +1,141 @@
+.shop-detail-wrapper {
+  // flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $color-page-background;
+
+  .shop-detail-inner-container {
+    display: flex;
+    flex-direction: row;
+    // width: 87.5%;
+    margin-top: 30px;
+
+    .delivery-product-info-container {
+      display: flex;
+      flex-direction: column;
+
+      .header-container {
+        background-color: white;
+        padding: 20px 30px;
+
+        .header-font {
+          font-size: $font-size-14;
+          color: $color-grey-7;
+        }
+      }
+
+      .add-deliver-address {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        padding: 20px 30px 40px 30px;
+
+        .added-address-row {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+      }
+
+      .product-info-container {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        padding: 20px 30px 30px 30px;
+      }
+
+      .note-container {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        padding: 20px 30px 40px 30px;
+      }
+    }
+
+    .empty-space {
+      background-color: $color-page-background;
+    }
+
+    .submit-order-container {
+      .submit-order-inner-container {
+        display: flex;
+        padding: 20px;
+        flex-direction: column;
+
+        background-color: white;
+
+        .price-detail-list-container {
+          display: flex;
+          width: 100%;
+          flex-direction: column;
+          .each-price-detail-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+          }
+        }
+
+        .coupon-container {
+          display: flex;
+          flex-direction: column;
+        }
+
+        .submit-button-container {
+          display: flex;
+          .submit-button-font {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  .margin-bottom-20 {
+    margin-bottom: 20px;
+  }
+  .margin-bottom-10 {
+    margin-bottom: 10px;
+  }
+  .margin-bottom-large-space {
+    margin-bottom: 35%;
+  }
+
+  .font-size-25 {
+    font-size: 25px;
+    font-weight: bold;
+  }
+  .font-size-20 {
+    font-size: 20px;
+  }
+  .font-color-70 {
+    color: $color-grey-7;
+  }
+  .font-color-9f {
+    color: $color-grey-servicePrice;
+  }
+  .total-price-font {
+    font-weight: bold;
+    font-size: $font-size-25;
+    color: $color-total-price;
+  }
+}
+
+.submit-order-btn {
+  border-width: 0px;
+  font-size: 16px;
+  height: 40px;
+  padding: 10px 0px;
+  background-color: $color-buy-button;
+
+  &:hover {
+    color: black;
+    background: $color-buy-button;
+    border-color: white;
+  }
+  &:focus {
+    color: black;
+    background: $color-buy-button;
+    border-color: white;
+  }
+}

@@ -1,0 +1,15 @@
+.image-object-fit-contain {
+  object-fit: contain;
+}
+.image-object-fit-cover {
+  object-fit: cover;
+}
+
+
+.image-from-backend {
+  margin: 0 3%;
+  .image-wrap {
+    max-width: 100%;
+   
+  }
+}

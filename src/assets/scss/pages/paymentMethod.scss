@@ -1,0 +1,119 @@
+.payment-method-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $color-page-background;
+
+  .payment-method-inner-container {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin-top: 30px;
+    background-color: $color-page-background;
+
+    .detail-container {
+      display: flex;
+      flex-direction: row;
+      background-color: white;
+      border-radius: 8px;
+
+      .order-number-container {
+        padding: 35px 20px 30px 40px;
+      }
+
+      .order-time-container {
+        display: flex;
+        flex-direction: row;
+        padding: 25px;
+
+        .order-image-size {
+          width: 110px;
+          height: 110px;
+          border-radius: 8px;
+          object-fit: cover;
+        }
+      }
+
+      .divider-font {
+        height: auto;
+      }
+    }
+
+    .method-container {
+      display: flex;
+      justify-content: center;
+      background-color: white;
+
+      .method-inner-container {
+        display: flex;
+        //width: 60%;
+
+        .tabs-container {
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+
+          .tab-content-container {
+            display: flex;
+            flex-direction: column;
+
+            .logo-container {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              
+              .logo-size {
+                height: 120px;
+                width: 120px;
+                object-fit: cover;
+              }
+              
+              .qrcode-size {
+                height: 240px;
+                width: 240px;
+              }
+            }
+
+            .credit-card-container {
+              display: flex;
+              flex-direction: column;
+              width: 60%;
+              align-self: center;
+            }
+
+            .message-box {
+              text-align: center;
+            }
+
+            .button-container {
+              display: flex;
+              width: 60%;
+              align-self: center;
+
+              .button-size {
+                width: 100%;
+              }
+            }
+
+            .paypal-button-container {
+              display: flex;
+              justify-content: center;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .order-number-font {
+    font-size: 15px;
+    color: #9f9f9f;
+  }
+
+  .order-type-title {
+    font-size: $font-size-28;
+    color: $color-grey-8;
+    font-weight: bold;
+  }
+}

@@ -1,0 +1,66 @@
+/* 朋友圈外框 */
+.ant-card-body {
+  padding: 0;
+}
+
+.ant-btn {
+  height: auto;
+}
+
+.social-list-wrapper {
+  display: -webkit-box; /* Not needed if autoprefixing */
+  display: -ms-flexbox; /* Not needed if autoprefixing */
+  display: flex;
+  width: auto;
+
+  .publish-icon {
+    height: 13vw;
+    background-color: #ededed;
+  }
+}
+
+.social-list-column {
+  margin-left: 5px;
+  margin-right: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  background-clip: padding-box;
+  width: fit-content;
+}
+
+.loadmore-button {
+  background-color: $color-buy-button;
+
+  &:hover {
+    border-color: $color-buy-button;
+    background-color: $color-buy-button;
+    color: $color-black;
+    transform: scale(1.1, 1.1);
+    box-shadow: 3px 5px 15px rgba(0, 0, 0, 0.3);
+  }
+}
+
+.publish-post-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  font-size: $font-size-28;
+  // position:fixed;
+  // right: 2vw;
+  // bottom: 30vh;
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 15vh;
+  left: 90%;
+  background-color: $color-primary;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.1, 1.1);
+    box-shadow: 3px 5px 15px rgba(0, 0, 0, 0.3);
+  }
+}

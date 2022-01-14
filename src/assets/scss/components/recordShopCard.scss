@@ -1,0 +1,31 @@
+.record-shop-card-wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 20px 30px;
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    .header-left {
+    }
+
+    .header-right {
+    }
+  }
+
+  .total-price-section {
+    display: flex;
+    justify-content: space-between;
+
+    .price-total-title {
+      font-size: 18px;
+      color: #707070;
+    }
+
+    .tax-text {
+      font-size: 16px;
+      color: #9f9f9f;
+    }
+  }
+}

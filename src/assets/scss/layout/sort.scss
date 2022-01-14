@@ -1,0 +1,53 @@
+.sort-main-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 1%;
+
+  .sort-main-inner {
+    padding: 1% 2%;
+    display: flex;
+    width: 100%;
+    border-radius: 15px;
+    background-color: white;
+    align-items: center;
+
+    .cursor-pointer {
+      cursor: pointer;
+    }
+
+    .center-item {
+      align-items: center;
+      display: flex;
+    }
+
+    .sort-padding-right {
+      padding-right: 3%;
+    }
+
+    .col-height {
+      display: flex;
+      height: 30px;
+      align-items: center;
+    }
+    .ant-input-number-sm {
+      padding: 0;
+    }
+  }
+
+  .sort-text {
+    font-size: $font-size-14;
+    color: $color-grey-7;
+
+    @media only screen and (max-width: 1024px) {
+      font-size: $font-size-12;
+    }
+  }
+
+  .price {
+    margin-right: 10px;
+  }
+
+  .ant-input-number-handler-wrap {
+    display: none;
+  }
+}

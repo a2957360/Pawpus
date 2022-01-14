@@ -1,0 +1,92 @@
+.datemodify-order-wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 20px 20px 10px 35px;
+
+  .header-row-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .content-row-container {
+    display: flex;
+    flex-direction: column;
+    // justify-content: space-between;
+
+    .detail-container {
+      //   width: 57%;
+      display: flex;
+      flex-direction: row;
+
+      .avatar-container {
+        width: 90px;
+        height: 90px;
+        box-shadow: 0px 3px 6px #00000029;
+        border: 2px solid #ffffff;
+        opacity: 1;
+        border-radius: 45px;
+        object-fit: cover;
+      }
+
+      .detail-section {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+
+    .note-container {
+      //   width: 32%;
+      margin-top: 30px;
+      margin-left: 120px;
+      .comment-row {
+        border: 1px solid #dddddd;
+        border-radius: 2px;
+        font-size: 18px;
+        color: #9f9f9f;
+      }
+    }
+  }
+
+  .state-price-row-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .margin-right-40 {
+    margin-right: 40px;
+  }
+  .margin-right-30 {
+    margin-right: 30px;
+  }
+  .margin-bottom-25 {
+    margin-bottom: 25px;
+  }
+  .font-20-59 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #595959;
+  }
+  .font-15-8c {
+    font-size: 15px;
+    color: #8c8c8c;
+  }
+  .font-18-8c {
+    font-size: 18px;
+    color: #8c8c8c;
+  }
+  .font-18-70 {
+    font-size: 18px;
+    color: #707070;
+  }
+  .font-16-9f {
+    font-size: 16px;
+    color: #9f9f9f;
+  }
+  .fw-bold {
+    font-weight: bold;
+  }
+}

@@ -1,0 +1,193 @@
+.modal-service-detail-calculator-inner {
+  padding: 0 3%;
+  margin-top: 30px;
+  border-radius: 10px;
+  background-color: white;
+  // position: fixed;
+  // top: 0;
+
+  .owner-section {
+    display: flex;
+    align-items: flex-end;
+
+    .animal-type {
+      font-size: $font-size-20;
+      padding-right: 4%;
+      font-weight: 500;
+    }
+
+    .owner-type {
+      font-size: $font-size-14;
+    }
+
+    .owner-color {
+      color: $color-owner;
+    }
+    //ipad
+    @media only screen and (min-width: 769px) and (max-width: 1024px) {
+      .animal-type {
+        font-size: $font-size-16;
+        padding-right: 4%;
+        font-weight: 400;
+      }
+
+      .owner-type {
+        font-size: $font-size-10;
+      }
+    }
+  }
+
+  .location-section {
+    display: flex;
+    margin-top: 1.5%;
+    justify-content: space-between;
+    font-size: $font-size-18;
+    color: $color-grey-8;
+
+    .star-review-section {
+      display: flex;
+      align-items: center;
+
+      .location-star {
+        font-size: $font-size-20;
+        padding-right: 10px;
+        color: $color-primary;
+      }
+    }
+    //ipad
+    @media only screen and (min-width: 769px) and (max-width: 1024px) {
+      font-size: 13px;
+      .star-review-section {
+        .location-star {
+          font-size: $font-size-14;
+          color: $color-primary;
+          padding-right: 0px;
+        }
+        .review-number {
+          font-size: $font-size-10;
+        }
+      }
+    }
+    @media only screen and (max-width: 768px) {
+      font-size: 13px;
+      .star-review-section {
+        .location-star {
+          font-size: $font-size-12;
+          color: $color-primary;
+          padding-right: 0px;
+        }
+        .review-number {
+          font-size: $font-size-12;
+        }
+      }
+    }
+  }
+
+  .calculator-inner {
+    display: flex;
+
+    .price-calculator-main-wrapper {
+      width: 100%;
+      height: fit-content;
+
+      .calculate-title {
+        font-size: $font-size-14;
+        color: $color-grey-8;
+      }
+      .warning-small {
+        font-size: $font-size-14;
+        color: $color-grey-7;
+      }
+
+      .font-size-20 {
+        font-size: $font-size-20;
+        color: $color-grey-7;
+      }
+
+      .service-calculate-price-text {
+        font-size: $font-size-20;
+        color: $color-grey-servicePrice;
+      }
+
+      .total-price-text {
+        color: $color-total-price;
+        font-size: $font-size-25;
+      }
+
+      .line-padding-top {
+        padding-top: 4%;
+      }
+
+      .line-padding-bottom {
+        padding-bottom: 4%;
+      }
+
+      .animal-type-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+      .reserve-button {
+        width: 100%;
+        height: 6%;
+        background-color: $color-primary;
+      }
+
+      .warning-text-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .rangepicker-size {
+        padding: 6.5px 11px 6.5px;
+      }
+
+      .input-number-size {
+        width: 18%;
+      }
+
+      @media only screen and (min-width: 769px) and (max-width: 1024px) {
+        .calculate-title {
+          font-size: $font-size-12;
+        }
+        .rangepicker-size {
+          padding: 0px 7px 0px;
+        }
+        .line-padding-top {
+          padding-top: 6%;
+        }
+
+        .font-size-20 {
+          font-size: 13px;
+        }
+
+        .calculate-title {
+          font-size: $font-size-10;
+        }
+
+        .input-number-size {
+          width: 60px;
+        }
+
+        .reserve-button {
+          height: 4.5%;
+          font-size: 12px;
+        }
+
+        .warning-small {
+          font-size: $font-size-10;
+        }
+
+        .service-calculate-price-text {
+          font-size: $font-size-16;
+        }
+
+        .total-price-text {
+          font-size: $font-size-20;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,43 @@
+.home-banner-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  .home-banner-container {
+    max-width: 1800px;
+    max-height: 500px;
+    width: 80vw;
+    height: 20vw;
+
+    & div {
+      width: 100%;
+      height: 100%;
+    }
+
+    @media only screen and (max-width: 768px) {
+      width: 90vw;
+      height: 23vw;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      border-radius: 8px;
+    }
+  }
+
+  .home-banner-dot {
+    background-color: aqua;
+    margin-top: 10px;
+    height: 30px;
+  }
+
+  .slick-dots li button {
+    margin-top: 10px;
+
+    @media only screen and (max-width: 767px) {
+      margin-top: 20px;
+    }
+  }
+}

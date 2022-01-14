@@ -1,0 +1,53 @@
+.help-wrapper {
+  display: flex;
+  justify-content: center;
+  background-color: $color-page-background;
+  min-height: 67vh;
+
+  .help-container {
+    display: flex;
+    flex-direction: column;
+    width: 47%;
+
+    .header-row {
+      width: 100%;
+      padding: 20px 30px;
+      background-color: #ffffff;
+      border-radius: 8px;
+    }
+
+    .each-col {
+      display: flex;
+      padding: 1%;
+      width: 320px;
+      height: 220px;
+
+      .col-inner-div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        border-radius: 8px;
+
+        .each-img {
+          object-fit: cover;
+          width: 35%;
+          height: 50%;
+        }
+      }
+    }
+
+    .each-content {
+      display: flex;
+      flex-direction: column;
+      font-size: 19px;
+      color: #707070;
+    }
+  }
+
+  .font-18-70 {
+    font-size: 18px;
+    color: #707070;
+  }
+}

@@ -1,0 +1,166 @@
+.basicInfo-wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: $color-page-background;
+
+  .process-container {
+    width: 100%;
+    background-color: white;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+
+  .content-container {
+    display: flex;
+    justify-content: center;
+
+    .inner-container {
+      width: 60%;
+      background-color: $color-page-background;
+
+      @media screen and (max-width: 1200px) {
+        width: 65%;
+      }
+
+      @media screen and (max-width: 994px) {
+        width: 90%;
+      }
+
+      .address-input-container {
+        display: flex;
+        flex-direction: column;
+
+        padding: 20px 30px 30px 30px;
+        background-color: white;
+
+        .title-row-section {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+
+          @media only screen and (max-width: 768px) {
+            display: flex;
+            flex-direction: column;
+          }
+
+          .title {
+            margin-right: 10px;
+          }
+        }
+
+        .input-row {
+          display: flex;
+          justify-content: space-between;
+
+          @media only screen and (max-width: 768px) {
+            display: flex;
+            flex-direction: column;
+          }
+
+          .input-col {
+            width: 45%;
+
+            @media only screen and (max-width: 768px) {
+              width: 100%;
+            }
+
+            .input-button-container {
+              width: 100%;
+              justify-content: space-between;
+              display: flex;
+              align-items: center;
+            }
+            .color-9f {
+              color: $color-grey-servicePrice;
+            }
+            .petStock-input {
+              width: 100%;
+              padding: 3px 0px;
+            }
+            .warning-subtitle-font {
+              font-size: 14px;
+              color: #707070;
+            }
+          }
+
+          .two-inputs {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .phone-input {
+              width: 55%;
+            }
+
+            .verify-num-input {
+              width: 40%;
+            }
+          }
+
+          .flex-end-item {
+            display: flex;
+            justify-content: flex-end;
+          }
+        }
+
+        .service-row {
+          display: flex;
+          flex-direction: column;
+
+          .each-service {
+            display: flex;
+            flex-direction: row;
+            width: 60%;
+            justify-content: space-between;
+
+            @media only screen and (max-width: 768px) {
+              width: 100%;
+            }
+
+            .service-type-dropdown {
+              width: 55%;
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+            }
+
+            .service-price {
+              width: 18%;
+            }
+          }
+        }
+      }
+
+      .proceed-buttons-container {
+        display: flex;
+        justify-content: flex-end;
+
+        .cancel-button {
+          border-width: 0px;
+          font-size: 20px;
+          color: #9f9f9f;
+          background-color: $color-page-background;
+        }
+
+        .next-button {
+          width: 200px;
+          font-size: 22px;
+          color: #262626;
+          background-color: #fadb14;
+        }
+      }
+    }
+  }
+  .margin-bottom-30 {
+    margin-bottom: 30px;
+  }
+
+  .margin-bottom-large {
+    margin-bottom: 15%;
+  }
+
+  .service-price-day {
+    align-items: center;
+    display: flex;
+  }
+}

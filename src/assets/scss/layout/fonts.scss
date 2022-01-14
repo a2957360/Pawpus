@@ -1,0 +1,75 @@
+.title {
+  font-size: 25px;
+  font-weight: bold;
+  color: #707070;
+}
+
+.total-price {
+  font-size: 25px;
+  font-weight: bold;
+  color: #ffad3e;
+}
+
+.total-price-small {
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffad3e;
+
+  @media only screen and (max-width: 1024px) {
+    font-size: 14px;
+  }
+
+  @media only screen and (max-width: 768px) {
+    font-size: 12px;
+  }
+}
+
+.subtitle {
+  font-size: 20px;
+  color: #707070;
+
+  @media only screen and (max-width: 1024px) {
+    font-size: 18px;
+  }
+
+  @media only screen and (max-width: 768px) {
+    font-size: 16px;
+  }
+}
+
+.input-font {
+  font-size: 20px;
+  color: #9f9f9f;
+
+  .ant-input-group-addon {
+    border: 0;
+  }
+}
+
+.record-14-70 {
+  font-size: 14px;
+  color: #707070;
+  @media only screen and (max-width: 1024px) {
+    font-size: 12px;
+  }
+
+  @media only screen and (max-width: 768px) {
+    font-size: 10px;
+  }
+}
+
+.span-mouse-click {
+  cursor: pointer;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.font-weight-bold {
+  font-weight: bold;
+}
+
+.certify-color {
+  color: #ff4d4f;
+}

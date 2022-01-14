@@ -1,0 +1,38 @@
+.review-main-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3%;
+
+  .review-userInfo-container {
+    display: flex;
+    flex-direction: row;
+
+    .review-user-avatar {
+      display: flex;
+
+      align-items: center;
+      .avatar {
+      }
+    }
+
+    .review-name-postTime {
+      // margin-left: 2%;
+
+      .user-name {
+        font-size: $font-size-18;
+      }
+
+      .time {
+        padding-top: 3%;
+        font-size: $font-size-14;
+      }
+    }
+  }
+
+  .review-content {
+    padding-top: 1%;
+  }
+  .content-paragraph {
+    color: $color-grey-7;
+  }
+}

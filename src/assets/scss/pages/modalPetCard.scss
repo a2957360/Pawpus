@@ -1,0 +1,94 @@
+.modal-pet-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .pet-card-inner {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+
+    .content {
+      display: flex;
+      flex-direction: row;
+
+      @media only screen and (max-width: 450px) {
+        flex-direction: column;
+      }
+
+      .upload-photo-container {
+        // width: 47%;
+        display: flex;
+        flex-direction: column;
+
+        .upload {
+          width: 340px;
+          height: 340px;
+          //mobile
+          @media only screen and (max-width: 767px) {
+            width: 100%;
+            height: 260px;
+          }
+          .test {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            .avatar-uploader > .ant-upload {
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+      }
+
+      .empty-space {
+        width: 6%;
+        @media only screen and (max-width: 768px) {
+          display: none;
+        }
+      }
+
+      .add-pet-info-container {
+        // width: 47%;
+
+        .two-col-input-container {
+          display: flex;
+
+          .left-container {
+            display: flex;
+            // flex: 1;
+            flex-direction: column;
+          }
+          .each-div {
+            display: flex;
+            flex-direction: column;
+          }
+        }
+      }
+    }
+
+    .footer {
+      display: flex;
+      justify-content: space-around;
+
+      .return-button {
+        font-size: 20px;
+        color: #9f9f9f;
+      }
+
+      .confirm-button {
+      }
+
+      .confirm-button-font {
+        background-color: $color-primary;
+        height: 40px;
+        padding: 0px 15px;
+        font-size: 22px;
+        border-radius: 2px;
+      }
+    }
+  }
+  .input-box-padding {
+    padding: 4px 0px;
+  }
+}

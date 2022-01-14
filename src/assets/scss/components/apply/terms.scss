@@ -1,0 +1,56 @@
+.terms-wrapper {
+  display: flex;
+  // height: 88vh;
+  // align-items: center;
+  justify-content: center;
+  background-color: $color-page-background;
+
+  .terms-inner-container {
+    width: 40%;
+    background-color: white;
+    margin: 30px 0;
+
+    @media screen and (max-width: 1200px) {
+      width: 60%;
+    }
+
+    @media screen and (max-width: 994px) {
+      width: 90%;
+    }
+
+    .terms-content-button-container {
+      display: flex;
+      height: auto;
+      flex-direction: column;
+      margin: 20px;
+
+      .terms-content-container {
+        display: flex;
+        flex-direction: column;
+        color: #707070;
+        background-color: $color-page-background;
+        padding: 20px 20px 30px 20px;
+
+        .title {
+          display: flex;
+          justify-content: center;
+          font-weight: bold;
+        }
+
+        .agreement-title {
+          font-weight: bold;
+        }
+      }
+
+      .agree-button {
+        display: flex;
+        justify-content: center;
+
+        .confirm-button {
+          background-color: $color-primary;
+          font-size: 22px;
+        }
+      }
+    }
+  }
+}

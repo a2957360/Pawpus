@@ -1,0 +1,15 @@
+.fixed-height-wrapper {
+  height: 72vh;
+}
+
+.page-wrapper {
+  display: flex;
+  justify-content: center;
+  background-color: $color-page-background;
+
+  .page-container {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+  }
+}

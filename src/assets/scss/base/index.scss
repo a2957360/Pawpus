@@ -1,0 +1,90 @@
+html,
+body {
+  --antd-wave-shadow-color: $color-white;
+  font-family: Arial, sans-serif;
+  max-width: 1920px;
+  margin: auto;
+  overflow-x: hidden;
+}
+
+[ant-click-animating-without-extra-node="true"]::after {
+  border-color: $color-white;
+}
+
+.ant-radio-checked::after {
+  border-color: $color-white;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+::selection {
+  background: white;
+}
+
+.white-background {
+  background-color: $color-white;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.page-background {
+  background-color: $color-page-background;
+}
+
+.primary-background {
+  background-color: $color-primary;
+}
+.color-active-chat {
+  background-color: $color-active-chat;
+}
+.color-owner {
+  color: $color-owner;
+}
+
+.w-15 {
+  width: 10%;
+}
+
+.w-30 {
+  width: 30%;
+}
+
+.w-35 {
+  width: 35%;
+}
+
+.w-40 {
+  width: 40%;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.w-60 {
+  width: 60%;
+}
+
+.w-70 {
+  width: 70%;
+}
+
+.w-80 {
+  width: 80%;
+}
+
+.w-90 {
+  width: 90%;
+}
+
+.mh-vh-60 {
+  min-height: 60vh;
+}
+
+.scale-container {
+
+}

@@ -1,0 +1,66 @@
+.shoplist-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $color-page-background;
+
+  .shoplist-inner-container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+
+    .header-container {
+      padding: 20px;
+      margin: 20px 0;
+      background-color: white;
+
+      .header-text {
+        font-size: $font-size-14;
+        color: $color-grey-7;
+      }
+    }
+    
+    .list-container {
+      width: 100%;
+      background-color: white;
+    }
+
+    .footer-container {
+      width: 100%;
+      //height: 30px;
+      margin: 20px 0;
+      background-color: white;
+
+      .buy-button {
+        height: 100%;
+        width: 100%;
+        //padding: 6.4px 15px;
+        font-size: 18px;
+        border-radius: 2px;
+        border-width: 0;
+        background-color: $color-buy-button;
+      }
+
+      .check-box-section {
+        margin-right: 20px;
+      }
+
+      .margin-right-10 {
+        margin-right: 10%;
+      }
+
+      .footer-font {
+        font-size: $font-size-14;
+        color: $color-grey-7;
+      }
+
+      .padding-vertical-20 {
+        padding: 20px 0px;
+      }
+    }
+  }
+  .ant-input-number-handler-wrap {
+    display: none;
+  }
+}

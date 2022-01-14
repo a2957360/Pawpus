@@ -1,0 +1,47 @@
+.ant-upload.ant-upload-drag{
+  height: 33vh;
+}
+.publish-container {
+  //margin: 1% 10%;
+  // overflow: hidden;
+}
+
+.image-upload-container {
+  //padding: 2% 0 2% 8%;
+}
+
+.image-gallery-wrapper {
+  // border: 1px solid black;
+  height: 35vh;
+  margin-bottom:3%;
+}
+
+.upload-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px dashed black;
+  width: 20vw;
+  height: 20vw;
+}
+.upload-icon {
+  text-align: center;
+  font-size: 50px;
+}
+
+.textarea-container {
+  //padding: 2% 10% 2% 2%;
+}
+.popup-message{
+  margin-top: 30vh;
+  font-size: $font-size-20;
+  // background-color: $color-grey-dark;
+  
+}
+
+@media only screen and (max-width: $breakpoint-tablet){
+  #image-gallery{
+    display: none;
+  }
+}

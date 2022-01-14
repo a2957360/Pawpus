@@ -1,0 +1,237 @@
+.service-order-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $color-page-background;
+
+  .service-order-inner-container {
+    margin-top: 30px;
+    background-color: $color-page-background;
+
+    .pageHeader-1 {
+      width: 100%;
+      background-color: $color-white;
+      border-radius: 8px;
+
+      .header-font {
+        font-size: $font-size-14;
+        color: $color-grey-7;
+      }
+    }
+
+    .provider-policy-container {
+      display: flex;
+      flex-direction: column;
+      background-color: white;
+      .provider-info-container {
+        display: flex;
+        flex-direction: column;
+
+        .provider-row {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          .provider-avatar {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+
+            .user-avatar {
+              width: 48px;
+              height: 48px;
+              line-height: 48px;
+              border-radius: 50%;
+              border: 2px solid #ffffff;
+              box-shadow: 0px 3px 6px #00000029;
+            }
+
+            .state-image {
+              position: absolute;
+              bottom: 0;
+              right: 15%;
+              height: 20%;
+              width: 70%;
+            }
+          }
+        }
+      }
+
+      .policy-container {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+
+    .checkin-info-container {
+      display: flex;
+      flex-direction: column;
+      background-color: white;
+    }
+
+    .time-selector-container {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .pet-info-container {
+      display: flex;
+      flex-direction: column;
+      background-color: white;
+
+      .title-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .add-pet-container {
+        font-size: 16px;
+      }
+
+      .pet-cards-section {
+        display: flex;
+        flex-direction: row;
+
+        .row-container {
+          width: 100%;
+
+          .pet-card-checkbox-container {
+            display: flex;
+            align-items: center;
+          }
+        }
+      }
+    }
+
+    .empty-space {
+      width: 2.3%;
+      background-color: $color-page-background;
+    }
+
+    .submit-order-inner-container {
+      display: flex;
+      padding: 20px;
+      flex-direction: column;
+
+      .price-detail-list-container {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        .each-price-detail-row {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+      }
+
+      .coupon-container {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .submit-button-container {
+        display: flex;
+        .submit-button-font {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .component-inner-padding {
+    padding: 20px 30px;
+  }
+
+  .margin-bottom-large-space {
+    margin-bottom: 35%;
+  }
+
+  .margin-bottom-30 {
+    margin-bottom: 2.8%;
+  }
+
+  .margin-bottom-20 {
+    margin-bottom: 20px;
+  }
+
+  .margin-bottom-15 {
+    margin-bottom: 15px;
+  }
+
+  .margin-bottom-10 {
+    margin-bottom: 10px;
+  }
+
+  .margin-right-15 {
+    margin-right: 15px;
+  }
+
+  .padding-right-10 {
+    padding-right: 10px;
+  }
+
+  .provider-title-font {
+    font-weight: bold;
+    font-size: $font-size-28;
+  }
+
+  .provider-font-color {
+    color: $color-owner;
+  }
+
+  .font-size-20 {
+    font-size: $font-size-20;
+  }
+
+  .font-size-14 {
+    font-size: 14px;
+  }
+
+  .font-size-15 {
+    font-size: 15px;
+  }
+
+  .font-size-18 {
+    font-size: 18px;
+  }
+
+  .font-color-59 {
+    color: $color-grey-8;
+  }
+
+  .font-color-70 {
+    color: $color-grey-7;
+  }
+
+  .font-color-9f {
+    color: $color-grey-servicePrice;
+  }
+
+  .font-size-24 {
+    font-size: 24px;
+  }
+
+  .policy-title-font {
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  .see-all {
+    text-decoration: underline;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  .total-price-font {
+    font-size: 25px;
+    font-weight: bold;
+    color: $color-total-price;
+  }
+
+  .phone-input {
+    width: 35%;
+    font-size: 20px;
+  }
+}

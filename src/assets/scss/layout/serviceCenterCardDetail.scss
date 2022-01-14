@@ -1,0 +1,283 @@
+.servicecenter-detail-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5% 0%;
+  background-color: $color-page-background;
+
+  .servicecenter-detail {
+    display: flex;
+    width: 57%;
+
+    @media only screen and (max-width: 1024px) {
+      width: 90%;
+    }
+
+    @media only screen and (max-width: 767px) {
+      width: 96%;
+    }
+
+    // .servicecenter-detail-content {
+    //   width: 85%;
+
+    //   //mobile
+    //   @media only screen and (max-width: 769px) {
+    //     width: 100%;
+    //   }
+    .main-container {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+
+      .pageHeader-1 {
+        width: 100%;
+        background-color: white;
+        padding: 2% 2%;
+        border-radius: 10px;
+        margin-bottom: 2%;
+      }
+
+      .title-text-xlarge {
+        font-size: $font-size-22;
+        font-weight: bold;
+        color: $color-grey-7;
+
+        //ipad
+        @media only screen and (max-width: 1024px) {
+          font-size: $font-size-18;
+        }
+
+        @media only screen and (max-width: 768px) {
+          font-size: $font-size-14;
+        }
+      }
+
+      .title-text-large {
+        margin: 0 2%;
+        font-size: $font-size-16;
+        //ipad
+        @media only screen and (max-width: 1024px) {
+          font-size: $font-size-14;
+        }
+        //mobile
+        @media only screen and (max-width: 768px) {
+          font-size: $font-size-12;
+        }
+      }
+
+      .favorite-button {
+        font-size: 24px;
+        color: $color-grey-light;
+
+        @media only screen and (max-width: 768px) {
+          font-size: 18px;
+        }
+      }
+
+      .saved-favorite {
+        font-size: 24px;
+        color: $color-primary;
+
+        @media only screen and (max-width: 768px) {
+          font-size: 18px;
+        }
+      }
+
+      .share-button {
+        height: 24px;
+        width: 24px;
+
+        @media only screen and (max-width: 768px) {
+          height: 18px;
+          width: 18px;
+        }
+      }
+
+      .pet-quantity-size {
+        font-size: $font-size-22;
+        color: $color-grey-7;
+        //ipad
+        @media only screen and (min-width: 769px) and (max-width: 1024px) {
+          font-size: $font-size-16;
+        }
+
+        //mobile
+        @media only screen and (min-width: 500px) and (max-width: 768px) {
+          font-size: $font-size-14;
+        }
+
+        //mobile
+        @media only screen and (max-width: 499px) {
+          font-size: $font-size-12;
+        }
+
+        .quantity-section {
+          margin-top: 1%;
+          @media only screen and (max-width: 499px) {
+            margin-top: 2%;
+          }
+        }
+      }
+
+      .detail-section {
+        display: flex;
+        align-items: flex-end;
+        margin-bottom: 1.5%;
+        color: $color-grey-7;
+
+        .detail-title-large {
+          font-size: $font-size-25;
+          font-weight: bold;
+        }
+        .detail-subtitle {
+          display: flex;
+          align-items: center;
+          margin: 0 2%;
+          font-size: $font-size-20;
+
+          .star-container {
+            height: 100%;
+            font-size: $font-size-20;
+            margin-right: 10px;
+            color: $color-primary;
+          }
+        }
+
+        //laptop
+        @media only screen and(min-width: 769px) and (max-width: 1024px) {
+          .detail-title-large {
+            font-size: $font-size-22;
+          }
+          .detail-subtitle {
+            font-size: $font-size-16;
+
+            .star-container {
+              font-size: $font-size-16;
+            }
+          }
+        }
+
+        //large-mobile
+        @media only screen and (min-width: 500px) and (max-width: 768px) {
+          .detail-title-large {
+            font-size: $font-size-16;
+          }
+          .detail-subtitle {
+            font-size: $font-size-14;
+
+            .star-container {
+              font-size: $font-size-14;
+            }
+          }
+        }
+
+        //small-mobile
+        @media only screen and (max-width: 499px) {
+          .detail-title-large {
+            font-size: $font-size-16;
+          }
+          .detail-subtitle {
+            font-size: $font-size-12;
+
+            .star-container {
+              font-size: $font-size-12;
+            }
+          }
+        }
+      }
+
+      .check-icon {
+        padding: 0 2%;
+        font-size: $font-size-20;
+        @media only screen and(min-width: 769px) and (max-width: 1024px) {
+          font-size: $font-size-16;
+        }
+        @media only screen and(min-width: 500px) and (max-width: 768px) {
+          font-size: $font-size-14;
+        }
+        @media only screen and (max-width: 499px) {
+          font-size: $font-size-12;
+        }
+      }
+
+      .detail-paragraph {
+        font-size: $font-size-20;
+        color: $color-grey-7;
+
+        @media only screen and(min-width: 769px) and (max-width: 1024px) {
+          font-size: $font-size-16;
+        }
+        @media only screen and(min-width: 500px) and (max-width: 768px) {
+          font-size: $font-size-14;
+        }
+        @media only screen and (max-width: 499px) {
+          font-size: $font-size-12;
+        }
+      }
+
+      .name-primary-color {
+        color: $color-primary;
+      }
+
+      .element-color-grey {
+        color: $color-grey-7;
+        font-size: $font-size-20;
+        @media only screen and(min-width: 769px) and (max-width: 1024px) {
+          font-size: $font-size-16;
+        }
+        @media only screen and(min-width: 500px) and (max-width: 768px) {
+          font-size: $font-size-14;
+        }
+        @media only screen and (max-width: 499px) {
+          font-size: $font-size-12;
+        }
+      }
+
+      .map-container {
+        width: 100%;
+        height: 450px;
+
+        @media only screen and(min-width: 769px) and (max-width: 1024px) {
+          height: 300px;
+        }
+        @media only screen and(min-width: 500px) and (max-width: 768px) {
+          height: 225px;
+        }
+        @media only screen and (max-width: 499px) {
+          height: 180px;
+        }
+      }
+
+      .fix-component {
+        display: none;
+
+        @media only screen and (max-width: 768px) {
+          display: flex;
+          position: fixed;
+          height: 100px;
+          width: 100%;
+          bottom: 0pt;
+          left: 0pt;
+          background-color: white;
+
+          .title-box {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          .button-box {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .modal-button {
+            }
+          }
+        }
+      }
+    }
+
+    // }
+  }
+}

@@ -1,0 +1,52 @@
+.primary-button {
+    background-color: $color-primary;
+
+    &:hover,
+    &:focus {
+        color: $color-black;
+        border-color: $color-primary;
+        background-color: $color-primary;
+    }
+}
+
+.white-button {
+    background-color: $color-white;
+    color: $color-grey-dark;
+    border: 1px solid $color-grey-dark;
+    border-radius: $border-radius-4;
+    box-shadow: none;
+
+    &:hover,
+    &:active,
+    &:focus {
+        color: $color-grey-dark;
+        border: 1px solid $color-grey-dark;
+        box-shadow: none;
+    }
+}
+
+.transparent-button {
+    background-color: transparent;
+    color: $color-grey-dark;
+    border: none;
+    box-shadow: none;
+
+    &:hover,
+    &:active,
+    &:focus {
+        background-color: transparent;
+        color: $color-grey-dark;
+        border: none;
+        box-shadow: none;
+    }
+}
+
+.responsive-button {
+    @media only screen and (max-width: 1024px) {
+        font-size: 12px;
+    }
+
+    @media only screen and (max-width: 768px) {
+        font-size: 10px;
+    }
+}

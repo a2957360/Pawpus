@@ -1,0 +1,95 @@
+.moment-author-profile {
+  width: 100%;
+
+  .author-avatar {
+    width: 3vw;
+    height: 3vw;
+    min-width: 50px;
+    min-height: 50px;
+    border: 2px solid $color-white;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    margin-right: 5%;
+    position: relative;
+
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: fill;
+    }
+
+    .state-style {
+      height: 20%;
+      width: 80%;
+      position: absolute;
+      bottom: -5%;
+      right: 10%;
+    }
+  }
+
+  .view-profile-button {
+    position: absolute;
+    top: 3%;
+    right: 1%;
+    padding: 0 2%;
+    border-radius: $border-radius-6;
+    box-shadow: 0.1rem 0.1rem 0.2rem rgba($color-black, 0.5);
+    transition: all 0.5s ease-in-out;
+
+    &:hover {
+      background-color: $color-primary;
+      transform: scale(1.03, 1.03);
+      color: $color-black;
+      border-color: $color-primary;
+    }
+  }
+}
+
+//查看更多朋友圈
+.loadmore-list {
+  overflow: auto;
+  max-height: 50vh;
+
+  .moment-cover-image {
+    width: 80px;
+    height: 80px;
+    // max-width: 80px;
+    // max-height: 80px;
+
+    // @media screen and (max-width: 767px) {
+    //   width: 12vw;
+    //   height: 12vw;
+    // }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: fill;
+      border-radius: $border-radius-6;
+    }
+  }
+
+  .moment-detail {
+    // width: 11.5vw;
+    flex-grow: 1;
+    max-width: 80%;
+    padding-left: 3%;
+
+    & > p {
+      max-width: 100%;
+      word-break: break-word;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      line-height: 1.5rem;
+      max-height: 4.5rem;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+    }
+
+    // @media screen and (max-width: 767px) {
+    //   width: 40vw;
+    // }
+  }
+}

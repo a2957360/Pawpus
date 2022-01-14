@@ -1,0 +1,101 @@
+.checkbox {
+    &--primary {
+        .ant-checkbox .ant-checkbox-inner {
+            border-color: $color-grey-light;
+            outline-color: $color-primary;
+
+            ::selection {
+                background-color: $color-primary;
+                border-color: $color-primary;
+                outline-color: $color-primary;
+            }
+
+            ::after {
+                background-color: $color-primary;
+                border-color: $color-primary;
+                outline-color: $color-primary;
+            }
+
+            &:checked,
+            &:active,
+            &:focus {
+                background-color: $color-primary;
+                border-color: $color-primary;
+                outline-color: $color-primary;
+            }
+        }
+
+        .ant-checkbox-checked .ant-checkbox-inner {
+            background-color: $color-primary;
+            border-color: $color-primary;
+            outline-color: $color-primary;
+
+            ::selection {
+                background-color: $color-primary;
+                border-color: $color-primary;
+                outline-color: $color-primary;
+            }
+
+
+            &:checked,
+            &:active,
+            &:focus {
+                background-color: $color-primary;
+                border-color: $color-primary;
+                outline-color: $color-primary;
+
+            }
+        }
+
+        .ant-checkbox-checked::after {
+            border-color: $color-primary;
+        }
+    }
+}
+
+.radio {
+    &--primary {
+        .ant-radio .ant-radio-inner {
+            border-color: $color-primary;
+            outline-color: $color-primary;
+
+            ::selection {
+                background-color: $color-primary;
+                border-color: $color-primary;
+            }
+
+            ::after {
+                background-color: $color-primary;
+                border-color: $color-primary;
+            }
+
+            &:checked,
+            &:active,
+            &:focus {
+                background-color: $color-primary;
+                border-color: $color-primary;
+            }
+        }
+
+        .ant-radio-checked .ant-radio-inner {
+            border-color: $color-primary;
+
+            ::selection {
+                border-color: $color-primary;
+            }
+
+
+            &:checked,
+            &:active,
+            &:focus {
+                border-color: $color-primary;
+            }
+        }
+
+        .ant-radio-inner::after {
+            background-color: $color-primary;
+            box-shadow: none;
+        }
+    }
+}
+  

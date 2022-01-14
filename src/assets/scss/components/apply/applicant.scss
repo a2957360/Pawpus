@@ -1,0 +1,138 @@
+.applicant-wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: $color-page-background;
+
+  .process-container {
+    width: 100%;
+    background-color: white;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+
+  .content-container {
+    display: flex;
+    justify-content: center;
+
+    .inner-container {
+      width: 60%;
+      background-color: $color-page-background;
+
+      @media screen and (max-width: 1200px) {
+        width: 65%;
+      }
+  
+      @media screen and (max-width: 994px) {
+        width: 90%;
+      }
+
+      .address-input-container {
+        display: flex;
+        flex-direction: column;
+
+        padding: 20px 30px 30px 30px;
+        background-color: white;
+
+        .title-row {
+          .title {
+            margin-right: 10px;
+          }
+        }
+
+        .input-row {
+          display: flex;
+          justify-content: space-between;
+
+          .input-col {
+            width: 45%;
+
+            .input-button-container {
+              width: 100%;
+              justify-content: space-between;
+              display: flex;
+              align-items: center;
+            }
+            .color-9f {
+              color: $color-grey-servicePrice;
+            }
+
+            .address-input {
+              width: 100%;
+              border: 1px solid $color-grey-dark;
+              padding: 5px 10px;
+
+              ::selection {
+                border: 1px solid $color-grey-dark;
+              }
+
+              &:active,
+              &:focus {
+                  color: $color-grey-dark;
+                  border: 1px solid $color-grey-dark;
+                  box-shadow: none;
+              }
+            }
+          }
+
+          .two-inputs {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .phone-input {
+              width: 55%;
+            }
+
+            .verify-num-input {
+              width: 40%;
+            }
+          }
+
+          .flex-end-item {
+            display: flex;
+            justify-content: flex-end;
+          }
+        }
+
+        .pet-cards-section {
+          display: flex;
+          flex-direction: row;
+          .row-container {
+            width: 100%;
+
+            .pet-card-checkbox-container {
+              display: flex;
+              align-items: center;
+            }
+          }
+        }
+      }
+
+      .proceed-buttons-container {
+        display: flex;
+        justify-content: flex-end;
+
+        .cancel-button {
+          border-width: 0px;
+          font-size: 20px;
+          color: #9f9f9f;
+          background-color: $color-page-background;
+        }
+
+        .next-button {
+          width: 200px;
+          font-size: 22px;
+          color: #262626;
+          background-color: #fadb14;
+        }
+      }
+    }
+  }
+  .margin-bottom-30 {
+    margin-bottom: 30px;
+  }
+
+  .margin-bottom-large {
+    margin-bottom: 15%;
+  }
+}

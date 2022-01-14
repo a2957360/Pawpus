@@ -1,0 +1,36 @@
+.home-features-container {
+    width: 70%;
+
+    @media only screen and (max-width: 767px) {
+        width: 80%;
+        margin-bottom: 12%;
+    }
+
+    .home-feature-image{
+        width: 80%;
+        height: 80%;
+    }
+
+    .home-feature-title {
+        font-size: $font-size-20;
+        font-weight: $font-weight-bold;
+        color: $color-grey-8;
+
+        @media only screen and (max-width: 1199px) {
+            font-size: $font-size-16;
+        }
+    }
+
+    .home-feature-description {
+        height: 15%;
+        width: 90%;
+        text-align: center;
+        font-size: $font-size-18;
+        font-weight: $font-weight-600;
+        color: $color-card-detail;
+
+        @media only screen and (max-width: 1199px) {
+            font-size: $font-size-14;
+        }
+    }
+}

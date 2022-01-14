@@ -1,0 +1,24 @@
+.ant-tag-checkable {
+    background-color: transparent;
+    color: $color-grey-8;
+    font-size: 16px;
+    font-weight: bold;
+
+    &:hover,
+    &:active,
+    &:focus {
+        background-color: $color-primary;
+        color: $color-grey-8;
+    }
+}
+
+.ant-tag-checkable-checked {
+    background-color: $color-primary;
+    color: $color-grey-8;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.ant-tag-checkable:not(.ant-tag-checkable-checked):hover {
+    color: $color-grey-8;
+}

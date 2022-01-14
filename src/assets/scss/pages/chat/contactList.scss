@@ -1,0 +1,25 @@
+.chat-contact-list-avatar {
+  width: 3vw;
+  height: 3vw;
+  border: 2px solid $color-white;
+  border-radius: 50%;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+
+  @media only screen and (max-width: 767px) {
+    width: 5vw;
+    height: 5vw;
+  }
+}
+
+.contact-list-name {
+  // width: 65%;
+  font-size: $font-size-14;
+  padding-left: 5%;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+  @media only screen and (max-width: 767px) {
+    font-size: $font-size-16;
+  }
+}

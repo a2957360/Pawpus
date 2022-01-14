@@ -1,0 +1,99 @@
+.chatroom-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .chatroom-container {
+    width: 80%;
+    border-width: 1px;
+    border-radius: $border-radius-6;
+
+    .chatroom-breadcrumb-pc {
+      @media screen and (max-width: 767px) {
+        display: none;
+      }
+    }
+
+    .chatroom-breadcrumb-mobile {
+      width: 100%;
+
+      @media screen and (min-width: 768px) {
+        display: none;
+      }
+    }
+
+    .chatroom-breadcrumb-mobile-menu-left {
+      display: none;
+
+      @media screen and (max-width: 767px) {
+        display: flex;
+        justify-content: center;
+        font-size: $font-size-16;
+      }
+    }
+
+    .chatroom-breadcrumb-mobile-menu-right {
+      display: none;
+
+      @media screen and (max-width: 992px) {
+        display: flex;
+        justify-content: center;
+        font-size: $font-size-16;
+      }
+    }
+  }
+
+  .chatroom-content-container {
+    width: 100%;
+    min-height: 60vh;
+
+    .message-list-container {
+      display: flex;
+      flex-direction: column;
+      // justify-content: space-between;
+
+      .message-list {
+        overflow: auto;
+
+        .chat-box {
+          max-width: 60%;
+        }
+        .chat-chatee-message-box {
+          background-color: $color-buy-button;
+          border-radius: 0 8px 8px 8px;
+          margin-left: 2%;
+          color: $color-white;
+        }
+        .chat-chater-message-box {
+          background-color: $color-chater-background;
+          border-radius: 8px 0 8px 8px;
+          margin-right: 2%;
+          color: $color-grey-servicePrice;
+        }
+
+        &::-webkit-scrollbar {
+          display: none;
+        }
+      }
+
+      .message-input {
+        position: relative;
+
+        .send-button {
+          position: absolute;
+          bottom: 5%;
+          right: 0;
+
+          .fa-paper-plane {
+            font-size: $font-size-16;
+          }
+        }
+      }
+    }
+  }
+
+  .chatroom-drawer{
+    border: 3px solid violet;
+  }
+}

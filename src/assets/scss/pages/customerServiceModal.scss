@@ -1,0 +1,27 @@
+.modal-container {
+  display: flex;
+  flex-direction: column;
+  padding: 2% 10%;
+
+  .header {
+    text-align: center;
+  }
+
+  .confirm-button {
+    width: 50%;
+    align-self: center;
+    margin-top: 10px;
+  }
+  .button-row {
+    display: flex;
+    justify-content: space-around;
+  }
+  .cancel-button {
+    font-size: 20px;
+    color: #9f9f9f;
+  }
+  .confirm-button {
+    font-size: 22px;
+    color: #262626;
+  }
+}

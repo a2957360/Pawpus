@@ -1,0 +1,13 @@
+//pc-80, tablet-90, mobile 95
+.responsive-container {
+    width: 80%;
+
+    //tablet
+    @media only screen and (max-width: 1024px) {
+        width: 90% !important;
+    }
+
+    @media only screen and (max-width: 767px) {
+        width: 95% !important;
+    }
+}

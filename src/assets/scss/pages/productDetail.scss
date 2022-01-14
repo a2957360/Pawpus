@@ -1,0 +1,193 @@
+.product-page-wrapper {
+  display: flex;
+  justify-content: center;
+  padding-top: 1.5%;
+  background-color: $color-page-background;
+
+  @media only screen and (max-width: 768px) {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 3%;
+    background-color: $color-page-background;
+  }
+
+  .product-page-main-container {
+    display: flex;
+    // max-width: 87.5%;
+    width: 78%;
+    flex-direction: column;
+    @media only screen and (max-width: 768px) {
+      display: flex;
+      max-width: 100%;
+      flex-direction: column;
+    }
+
+    .page-header-container {
+      background-color: white;
+      padding: 1% 1.5%;
+      margin-bottom: 2%;
+      @media only screen and (max-width: 768px) {
+        background-color: white;
+        padding: 1% 1.5%;
+        margin-bottom: 3%;
+      }
+
+      .page-breadcrumb-text {
+        font-size: $font-size-14;
+        color: $color-grey-7;
+        @media only screen and (max-width: 768px) {
+          font-size: $font-size-14;
+          color: $color-grey-7;
+        }
+      }
+    }
+
+    .contents {
+      display: flex;
+
+      .product-page-left {
+        width: 23.5%;
+        @media only screen and (max-width: 768px) {
+          display: none;
+        }
+        .product-recommend-cotainer {
+          .image-gallery-container {
+            .react-slider__ul li {
+              position: relative;
+              width: 70px;
+              cursor: pointer;
+              padding: 0;
+              list-style: none;
+              margin: 1%;
+              flex: 0 0 14%;
+              height: 45px;
+            }
+
+            .each-img {
+              img {
+                height: 30%;
+                width: 100%;
+                object-fit: cover;
+              }
+            }
+
+            .image-gallery-thumbnails .image-gallery-thumbnails-container {
+              cursor: pointer;
+              text-align: left;
+              transition: transform 0.45s ease-out;
+              white-space: nowrap;
+            }
+
+            .image-gallery-left-nav .image-gallery-svg,
+            .image-gallery-right-nav .image-gallery-svg {
+              height: 45px;
+              width: 30px;
+            }
+
+            .image-gallery-fullscreen-button .image-gallery-svg,
+            .image-gallery-play-button .image-gallery-svg {
+              height: 25px;
+              width: 30px;
+            }
+          }
+
+          .other-category-container {
+            margin-top: 3%;
+
+            .title {
+              margin-bottom: 2%;
+              font-size: $font-size-25;
+              color: $color-grey-7;
+              font-weight: 500;
+            }
+
+            .each-col {
+              margin: 1% 0;
+              .category-element {
+                text-decoration: underline;
+                font-size: $font-size-20;
+                color: $color-grey-7;
+              }
+            }
+          }
+
+          .related-recommend-container {
+            .title {
+              margin-bottom: 2%;
+              font-size: $font-size-25;
+              color: $color-grey-7;
+              font-weight: 700;
+            }
+          }
+        }
+      }
+
+      .empty-space {
+        height: auto;
+        width: 3%;
+      }
+      .product-page-right {
+        // flex: 3;
+        width: 73.5%;
+        @media only screen and (max-width: 768px) {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.tags-container {
+  .tag-text {
+    font-size: $font-size-18;
+    color: $color-card-detail;
+    justify-content: center;
+    @media only screen and (max-width: 768px) {
+      font-size: $font-size-16;
+    }
+  }
+}
+
+.add-to-cart-button {
+  border-color: $color-grey-light;
+  font-size: $font-size-22;
+  height: auto;
+  @media only screen and (max-width: 768px) {
+    font-size: $font-size-16;
+  }
+}
+
+.btn-color-light {
+  color: $color-card-detail;
+  border-color: $color-grey-light;
+  background-color: white;
+
+  &:hover {
+    color: $color-card-detail;
+    border-color: $color-grey-light;
+    background-color: white;
+  }
+  &:focus {
+    color: $color-card-detail;
+    border-color: $color-grey-light;
+    background-color: white;
+  }
+}
+
+.btn-color-dark {
+  color: black;
+  background-color: $color-primary;
+  border-width: 0;
+
+  &:hover {
+    color: black;
+    background: $color-primary;
+    border-color: white;
+  }
+  &:focus {
+    color: black;
+    background: $color-primary;
+    border-color: white;
+  }
+}

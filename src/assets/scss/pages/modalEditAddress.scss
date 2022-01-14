@@ -1,0 +1,75 @@
+.modal-edit-address {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .edit-address-inner {
+    width: 90%;
+
+    .address-title {
+      text-align: center;
+      font-size: $font-size-20;
+      color: $color-grey-servicePrice;
+    }
+    .button-container {
+      text-align: center;
+    }
+
+    .radio-group-section {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      .each-radio {
+        display: flex;
+        align-items: center;
+      }
+
+      .delete-button {
+        align-self: center;
+      }
+    }
+  }
+
+  .margin-bottom-20 {
+    margin-bottom: 20px;
+  }
+  .margin-bottom-30 {
+    margin-bottom: 30px;
+  }
+  .margin-bottom-empty-space {
+    margin-bottom: 30%;
+  }
+
+  .input-font {
+    font-size: 20px;
+  }
+
+  .button-font {
+    font-size: 22px;
+    height: 50px;
+    padding: 9px 16px;
+    border-radius: 2px;
+    border-width: 0;
+    background-color: $color-buy-button;
+
+    &:hover {
+      color: black;
+      background: $color-buy-button;
+      border-width: 0px;
+    }
+    &:focus {
+      color: black;
+      background: $color-buy-button;
+      border-width: 0px;
+    }
+  }
+  .address-row-font {
+    font-size: $font-size-20;
+    color: $color-grey-7;
+  }
+  .price-font {
+    font-size: 20px;
+    color: #ffad3e;
+  }
+}

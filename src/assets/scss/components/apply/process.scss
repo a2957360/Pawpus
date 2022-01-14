@@ -1,0 +1,16 @@
+.process-wrapper {
+  //   display: flex;
+  width: 96%;
+  margin: 30px;
+
+  .process-section-font {
+    .ant-steps-item-title {
+      font-size: $font-size-14;
+      color: $color-grey-8;
+    }
+    .ant-steps-item-description {
+      font-size: $font-size-12;
+      color: $color-card-detail;
+    }
+  }
+}

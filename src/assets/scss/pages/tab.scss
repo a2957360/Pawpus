@@ -1,0 +1,18 @@
+.ant-tabs-tab-btn {
+    font-size: $font-size-16;
+
+    &:hover {
+        color: $color-grey-dark;
+    }
+}
+
+.ant-tabs-tab.ant-tabs-tab-active {
+    .ant-tabs-tab-btn {
+        color: $color-grey-dark;
+    }
+}
+
+.ant-tabs-ink-bar {
+    height: 10px;
+    background: $color-primary !important;
+}

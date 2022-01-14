@@ -1,0 +1,361 @@
+.detail-main-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  .image-gallery-container {
+    @media only screen and (min-width: 769px) {
+      display: none;
+    }
+    @media only screen and (max-width: 768px) {
+      // .react-slider__ul li {
+      //   position: relative;
+      //   width: 70px;
+      //   cursor: pointer;
+      //   padding: 0;
+      //   list-style: none;
+      //   margin: 1%;
+      //   flex: 0 0 14%;
+      //   height: 45px;
+      // }
+
+      .image-gallery-thumbnails .image-gallery-thumbnails-container {
+        cursor: pointer;
+        text-align: left;
+        transition: transform 0.45s ease-out;
+        white-space: nowrap;
+      }
+
+      .image-gallery-left-nav .image-gallery-svg,
+      .image-gallery-right-nav .image-gallery-svg {
+        height: 45px;
+        width: 30px;
+      }
+
+      .image-gallery-fullscreen-button .image-gallery-svg,
+      .image-gallery-play-button .image-gallery-svg {
+        height: 25px;
+        width: 30px;
+      }
+    }
+  }
+
+  .product-detail-card-wrapper {
+    display: flex;
+    flex-direction: column;
+
+    @media only screen and (max-width: 768px) {
+      flex-direction: column;
+      margin-top: 2%;
+    }
+
+    .paddingLeft-3 {
+      padding-left: 3%;
+    }
+
+    .marginRight-2 {
+      margin-right: 20px;
+    }
+
+    .button-vertical-margin {
+      padding-bottom: 15px;
+      @media only screen and (max-width: 768px) {
+        margin-bottom: 2.2%;
+      }
+    }
+
+    .margin-vertical {
+      margin-bottom: 130px;
+      @media only screen and (max-width: 768px) {
+        margin-bottom: 10px;
+      }
+    }
+
+    .title-section {
+      flex: 2;
+      display: flex;
+      flex-direction: column;
+      background-color: $color-page-background;
+
+      @media only screen and (max-width: 768px) {
+        padding: 0 10px;
+      }
+
+      .number-like-font {
+        color: $color-grey-7;
+        font-size: $font-size-18;
+        @media only screen and (max-width: 768px) {
+          font-size: $font-size-16;
+        }
+      }
+
+      .owner-font {
+        color: $color-total-price;
+        font-size: $font-size-18;
+        @media only screen and (max-width: 768px) {
+          font-size: $font-size-16;
+        }
+      }
+
+      .main-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        @media only screen and (max-width: 768px) {
+          flex-direction: column;
+        }
+
+        .main-header-font {
+          color: $color-grey-8;
+          font-size: $font-size-20;
+          font-weight: 500;
+          @media only screen and (max-width: 768px) {
+            font-size: $font-size-16;
+          }
+        }
+      }
+
+      .sub-header {
+        display: flex;
+        flex-direction: row;
+        @media only screen and (max-width: 768px) {
+          flex-direction: column;
+        }
+      }
+
+      .owner-text {
+        display: flex;
+        flex-direction: row;
+        padding-left: 3%;
+
+        @media only screen and (max-width: 768px) {
+          padding-left: 0;
+        }
+      }
+    }
+
+    .price-section {
+      flex: 8;
+      display: flex;
+      flex-direction: column;
+      padding-right: 2.8%;
+      padding-left: 2.8%;
+      padding-top: 1.5%;
+      padding-bottom: 2.2%;
+      margin-top: 2%;
+      background-color: white;
+      position: relative;
+
+      @media only screen and (max-width: 768px) {
+        padding: 0 10px;
+        margin-top: 3%;
+      }
+
+      .price-row {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin: 10px 0;
+        @media only screen and (max-width: 768px) {
+          margin: 1.8% 0;
+        }
+
+        .price-title-inner-container {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+        }
+
+        .price-row-title {
+          color: $color-grey-8;
+          font-size: $font-size-18;
+          @media only screen and (max-width: 767px) {
+            font-size: $font-size-16;
+          }
+        }
+
+        .price-new-font {
+          font-size: $font-size-25;
+          color: $color-total-price;
+          margin-right: 10px;
+          @media only screen and (max-width: 767px) {
+            font-size: $font-size-20;
+          }
+        }
+
+        .price-old-font {
+          font-size: $font-size-20;
+          color: $color-card-detail;
+          @media only screen and (max-width: 767px) {
+            font-size: $font-size-16;
+          }
+        }
+
+        .share-favorite-button-section {
+          flex-direction: row;
+          display: flex;
+
+          .favorite-button {
+            font-size: $font-size-20;
+            color: $color-grey-light;
+            margin-right: 20px;
+            cursor: pointer;
+          }
+
+          .saved-favorite-button {
+            font-size: $font-size-20;
+            color: $color-grey-light;
+            margin-right: 20px;
+            cursor: pointer;
+            color: #fadb14;
+          }
+
+          .share-button {
+            height: 18px;
+            width: 24px;
+          }
+        }
+      }
+
+      .type-row {
+        display: flex;
+        // margin-bottom: 10px;
+
+        .type-row-title {
+          font-size: $font-size-18;
+          @media only screen and (max-width: 767px) {
+            font-size: $font-size-16;
+          }
+        }
+      }
+
+      .button-row {
+        position: absolute;
+        right: 0;
+        bottom: 10%;
+        padding-right: 2.8%;
+        @media only screen and (max-width: 767px) {
+          position: relative;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+
+  .image-review-section {
+    margin-top: 20px;
+    background-color: white;
+
+    .tab-style {
+      .ant-tabs-nav-wrap {
+        margin-left: 3%;
+        .ant-tabs-tab-btn {
+          color: black;
+        }
+
+        .ant-tabs-ink-bar {
+          background-color: $color-primary;
+        }
+      }
+    }
+    .review-title-section {
+      display: flex;
+      flex-direction: column;
+      margin: 0 3%;
+
+      .review-title-inner {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        margin-bottom: 2.5%;
+
+        .review-title {
+          font-size: $font-size-25;
+          color: $color-grey-7;
+        }
+
+        .review-text {
+          display: flex;
+          font-size: $font-size-18;
+          align-items: center;
+          margin-left: 3%;
+          .review-star {
+            color: $color-primary;
+          }
+        }
+      }
+    }
+  }
+
+  .other-category-container {
+    @media only screen and (min-width: 1024px) {
+      display: none;
+    }
+
+    @media only screen and (max-width: 1024px) and (min-width: 768px) {
+      margin-top: 15px;
+      padding: 0 10px;
+
+      .title {
+        margin-bottom: 10px;
+        font-size: $font-size-16;
+        color: $color-grey-7;
+        font-weight: 500;
+      }
+
+      .each-col {
+        margin: 5px 0;
+        .category-element {
+          text-decoration: underline;
+          font-size: $font-size-16;
+          color: $color-grey-7;
+        }
+      }
+    }
+
+    @media only screen and (max-width: 767px) {
+      margin-top: 15px;
+      padding: 0 10px;
+
+      .title {
+        margin-bottom: 10px;
+        font-size: $font-size-16;
+        color: $color-grey-7;
+        font-weight: 500;
+      }
+
+      .each-col {
+        margin: 5px 0;
+        .category-element {
+          text-decoration: underline;
+          font-size: $font-size-16;
+          color: $color-grey-7;
+        }
+      }
+    }
+  }
+
+  .related-recommend-container {
+    @media only screen and (min-width: 1024px) {
+      display: none;
+    }
+    @media only screen and (max-width: 1024px) and (min-width: 768px) {
+      .title {
+        padding-left: 10px;
+        margin-bottom: 10px;
+        font-size: $font-size-16;
+        color: $color-grey-7;
+        font-weight: 700;
+      }
+    }
+    @media only screen and (max-width: 767px) {
+      .title {
+        padding-left: 10px;
+        margin-bottom: 10px;
+        font-size: $font-size-16;
+        color: $color-grey-7;
+        font-weight: 700;
+      }
+    }
+  }
+}
